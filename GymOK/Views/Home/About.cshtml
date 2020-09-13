@@ -1,0 +1,63 @@
+﻿
+@{
+    ViewBag.Title = "About";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">LOGO<small>Fitness</small></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="oi oi-menu"></span> Menu
+        </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav ml-auto">
+                @*<li class="nav-item active"><a href="/Home/index.html" class="nav-link">HOME</a></li>
+                    <li class="nav-item"><a href="/Home/About.html" class="nav-link">ABOUT</a></li>
+                    <li class="nav-item"><a href="/Home/Services.html" class="nav-link">SERVICES</a></li>
+                    <li class="nav-item"><a href="/Home/Trainers.html" class="nav-link">TRAINERS</a></li>
+                    <li class="nav-item"><a href="/Home/Contact.html" class="nav-link">CONTACT</a></li>*@
+                @*<li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>*@
+                <li class="nav-item ">@Html.ActionLink("HOME", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                <li class="nav-item active"> @Html.ActionLink("ABOUT", "About", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                <li class="nav-item">@Html.ActionLink("SERVICES", "Services", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                <li class="nav-item">@Html.ActionLink("TRAINERS", "Trainers", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                <li class="nav-item"> @Html.ActionLink("CONTACT", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<body>
+    <!-- About Section Begin -->
+    <section class="about-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about-pic">
+                        <img src="~/Content/gutim/img/about-pic.jpg" alt="">
+                        <a href="https://www.youtube.com/watch?v=SlPhMPnQ58k" class="play-btn video-popup">
+                            <img src="~/Content/gutim/img/play.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-text">
+                        <h2>Story About Us</h2>
+                        <p class="first-para">
+                            Lorem ipsum proin gravida nibh vel velit auctor aliquet. Aenean pretium
+                            sollicitudin, nascetur auci elit consequat ipsutissem niuis sed odio sit amet nibh vulputate
+                            cursus a amet.
+                        </p>
+                        <p class="second-para">
+                            Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, gravida
+                            quam semper libero sit amet. Etiam rhoncus. Maecenas tempus, tellus eget condimentum
+                            rhoncus, gravida quam semper libero sit amet.
+                        </p>
+                        <a href="#" class="primary-btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section End -->
+</body>
